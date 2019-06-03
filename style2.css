@@ -1,0 +1,48 @@
+:root {
+  --primary-color: #04005e;
+  --secondary-color: #ff2079;
+  --white: #fff;
+}
+
+body {
+  font-size: 18px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: var(--secondary-color);
+  position: relative;
+  height: 100vh;
+}
+
+.container {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: var(--primary-color);
+  text-align: center;
+  border-radius: 3px;
+}
+
+.container p {
+  padding: 10px;
+  color: var(--white);
+  text-align: center;
+}
+
+.container a {
+  padding: 10px 15px;
+  color: var(--white);
+  text-decoration: none;
+  text-align: center;
+  /* background: var(--primary-color); */
+  border: 1px solid var(--white);
+  border-radius: 3px;
+  transition-property: background, color;
+  transition: 0.3s;
+}
+
+.container a:hover {
+  background: var(--secondary-color);
+  color: var(--white);
+}
